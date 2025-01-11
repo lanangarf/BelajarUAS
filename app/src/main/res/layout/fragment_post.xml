@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Post">
+
+    <View
+        android:id="@+id/sun"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/sun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/post"
+        android:textColor="@color/white"
+        android:textSize="@dimen/l_size"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="350dp"
+        android:layout_height="620dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="27dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/post_questions"
+                android:text="@string/post_q1"
+                android:layout_marginTop="20dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/question_1"
+                style="@style/radio_qroup"
+                android:layout_marginTop="40dp">
+
+                <RadioButton
+                    android:id="@+id/q11"
+                    style="@style/radio_button"
+                    android:text="@string/bad"/>
+                <RadioButton
+                    android:id="@+id/q12"
+                    style="@style/radio_button"
+                    android:text="@string/okay"/>
+                <RadioButton
+                    android:id="@+id/q13"
+                    style="@style/radio_button"
+                    android:text="@string/good"/>
+                <RadioButton
+                    android:id="@+id/q14"
+                    style="@style/radio_button"
+                    android:text="@string/great"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/post_questions"
+                android:text="@string/post_q2"
+                android:layout_marginTop="110dp" />
+
+            <RadioGroup
+                android:id="@+id/question_2"
+                style="@style/radio_qroup"
+                android:layout_marginTop="130dp">
+
+                <RadioButton
+                    android:id="@+id/q21"
+                    style="@style/radio_button"
+                    android:text="@string/bad"/>
+                <RadioButton
+                    android:id="@+id/q22"
+                    style="@style/radio_button"
+                    android:text="@string/okay"/>
+                <RadioButton
+                    android:id="@+id/q23"
+                    style="@style/radio_button"
+                    android:text="@string/good"/>
+                <RadioButton
+                    android:id="@+id/q24"
+                    style="@style/radio_button"
+                    android:text="@string/great"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/post_questions"
+                android:text="@string/post_q3"
+                android:layout_marginTop="200dp" />
+
+            <RadioGroup
+                android:id="@+id/question_3"
+                style="@style/radio_qroup"
+                android:layout_marginTop="220dp">
+
+                <RadioButton
+                    android:id="@+id/q31"
+                    style="@style/radio_button"
+                    android:text="@string/bad"/>
+                <RadioButton
+                    android:id="@+id/q32"
+                    style="@style/radio_button"
+                    android:text="@string/okay"/>
+                <RadioButton
+                    android:id="@+id/q33"
+                    style="@style/radio_button"
+                    android:text="@string/good"/>
+                <RadioButton
+                    android:id="@+id/q34"
+                    style="@style/radio_button"
+                    android:text="@string/great"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/post_questions"
+                android:text="@string/post_q4"
+                android:layout_marginTop="290dp"/>
+
+            <RadioGroup
+                android:id="@+id/question_4"
+                style="@style/radio_qroup"
+                android:layout_marginTop="310dp">
+
+                <RadioButton
+                    android:id="@+id/q41"
+                    style="@style/radio_button"
+                    android:text="@string/none"/>
+                <RadioButton
+                    android:id="@+id/q42"
+                    style="@style/radio_button"
+                    android:text="@string/some"/>
+                <RadioButton
+                    android:id="@+id/q43"
+                    style="@style/radio_button"
+                    android:text="@string/enough"/>
+                <RadioButton
+                    android:id="@+id/q44"
+                    style="@style/radio_button"
+                    android:text="@string/a_lot"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/post_questions"
+                android:text="@string/post_q5"
+                android:layout_marginTop="380dp" />
+
+            <RadioGroup
+                android:id="@+id/question_5"
+                style="@style/radio_qroup"
+                android:layout_marginTop="400dp">
+
+                <RadioButton
+                    android:id="@+id/q51"
+                    style="@style/radio_button"
+                    android:text="@string/none"/>
+                <RadioButton
+                    android:id="@+id/q52"
+                    style="@style/radio_button"
+                    android:text="@string/some"/>
+                <RadioButton
+                    android:id="@+id/q53"
+                    style="@style/radio_button"
+                    android:text="@string/enough"/>
+                <RadioButton
+                    android:id="@+id/q54"
+                    style="@style/radio_button"
+                    android:text="@string/a_lot"/>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/post_questions"
+                android:text="@string/post_q6"
+                android:layout_marginTop="460dp" />
+
+            <RadioGroup
+                android:id="@+id/question_6"
+                style="@style/radio_qroup"
+                android:layout_marginTop="480dp">
+
+                <RadioButton
+                    android:id="@+id/q61"
+                    style="@style/radio_button"
+                    android:text="@string/not"/>
+                <RadioButton
+                    android:id="@+id/q62"
+                    style="@style/radio_button"
+                    android:text="@string/a_little"/>
+                <RadioButton
+                    android:id="@+id/q63"
+                    style="@style/radio_button"
+                    android:text="@string/decent"/>
+                <RadioButton
+                    android:id="@+id/q64"
+                    style="@style/radio_button"
+                    android:text="@string/very"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/post_button"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/post_button"
+                android:layout_marginTop="560dp"
+                android:layout_marginStart="127dp"
+                android:backgroundTint="@color/pop"
+                app:cornerRadius="20dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount,UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/home_main_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <View
+                    android:id="@+id/profile_background"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/ellipse_4"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:layout_marginStart="288dp"
+                    android:layout_marginTop="34dp"
+                    android:src="@drawable/img_4573_2"
+                    android:contentDescription="@string/profile_photo" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="350dp"
+                android:layout_height="270dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="27dp"
+                android:layout_marginBottom="27dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        style="@style/home_images"
+                        android:src="@drawable/hotline"
+                        android:contentDescription="@string/student_health_photo" />
+
+                    <TextView
+                        style="@style/home_card_text"
+                        android:text="@string/student_health_services"
+                        />
+
+                    <TextView
+                        style="@style/home_card_text_sub"
+                        android:text="@string/home_title_1_hours"
+                        />
+
+                    <Button
+                        android:id="@+id/studentServices"
+                        style="@style/call_button"
+                        app:cornerRadius="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                style="@style/home_card"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        style="@style/home_images"
+                        android:src="@drawable/second"
+                        android:contentDescription="@string/suicide_hotline_photo" />
+
+                    <TextView
+                        style="@style/home_card_text"
+                        android:text="@string/financial_aid_office"
+                        />
+
+                    <TextView
+                        style="@style/home_card_text_sub"
+                        android:text="@string/hours_24_7"
+                        />
+
+                    <Button
+                        android:id="@+id/financialAid"
+                        style="@style/call_button"
+                        app:cornerRadius="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                style="@style/home_card"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        style="@style/home_images"
+                        android:src="@drawable/harbor"
+                        android:contentDescription="@string/student_affairs_photo" />
+
+                    <TextView
+                        style="@style/home_card_text"
+                        android:text="@string/student_affairs"
+                        />
+
+                    <TextView
+                        style="@style/home_card_text_sub"
+                        android:text="@string/hours_8_30am_5pm"
+                        />
+
+                    <Button
+                        android:id="@+id/studentAffairs"
+                        style="@style/call_button"
+                        app:cornerRadius="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                style="@style/home_card"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        style="@style/home_images"
+                        android:src="@drawable/student"
+                        android:contentDescription="@string/career_center_photo" />
+
+                    <TextView
+                        style="@style/home_card_text"
+                        android:text="@string/career_center"
+                        />
+
+                    <TextView
+                        style="@style/home_card_text_sub"
+                        android:text="@string/hours_8_30am_5pm"
+                        />
+
+                    <Button
+                        android:id="@+id/careerCenter"
+                        style="@style/call_button"
+                        app:cornerRadius="20dp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

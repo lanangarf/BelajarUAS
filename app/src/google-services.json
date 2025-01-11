@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558951308747",
+    "project_id": "belajaruas-37438",
+    "storage_bucket": "belajaruas-37438.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558951308747:android:035f64ff1bfa76a591ea4e",
+        "android_client_info": {
+          "package_name": "com.lanang.android.BelajarUAS"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXM3ODN9kLproi2U6u-QYi5Z966DQFZ2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
